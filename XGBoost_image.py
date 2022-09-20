@@ -5,10 +5,6 @@ must try for loading image set from local and then trainning.
 Training with image set looks possible but accuracy is very bad need to check with other datasets as well
 @author: raj.yadav
 """
-
-import warnings
-warnings.filterwarnings("ignore")
-
 from keras.datasets import cifar10
 (X_train,y_train),(X_test,y_test)=cifar10.load_data()
 
