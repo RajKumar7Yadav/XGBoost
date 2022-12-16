@@ -17,7 +17,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 X_train,X_test,y_train,y_test=train_test_split(feature,target,shuffle=True,random_state=7,test_size=0.3)
-model=XGBClassifier()
+model=XGBClassifier(gamma=0.5,learning_rate=0.01,max_delta_step=0.1)
 
 model.fit(X_train,y_train)
 
